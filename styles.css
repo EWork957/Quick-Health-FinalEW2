@@ -1,0 +1,229 @@
+/* BODY */
+body{
+  background-color: #d7e6fb;
+}
+/* CONTAINER */
+.container {
+  max-width: 280px;
+  max-height: 388px; 
+  margin: 0 auto; 
+  padding: 0px; 
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+/* HEADER */
+.header {
+  text-align: center;
+  font-size: 25px;
+  width: 500px;
+  margin: -15px;
+}
+.separator {
+  width: 100%;
+}
+/* FOOTER */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(101, 101, 101);
+  color: white;
+  text-align: center;
+}
+/* AI BUTTON */
+.centered-button {
+  position: absolute; 
+  bottom: 90px; 
+  left: 50%; 
+  font-size: 15px;
+  transform: translateX(-50%); 
+  width: 200px; 
+  padding: 30px; 
+  background-color: #0056b3; 
+  color: white; 
+  border: none; 
+  border-radius: 50px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, transform 0.2s ease-in-out; 
+}
+.centered-button:hover {
+  background-color: #003366 
+}
+.centered-button:active {
+  background-color: #0f2a3d; 
+}
+/* SQUARE BUTTON */
+.BurnsCutsButtons {
+  position: relative;
+  margin-top: 10%;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.burns-button, .cuts-button {
+  width: 400px;
+  height: 150px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 80px;
+  background-color: #1E90FF;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s ease-in-out, box-shadow 0.3s;
+  background: linear-gradient(to right, #0daee5, #0fc8d5);
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+.burns-button:hover {
+  background: linear-gradient(to right, #0fc8d5, #0daee5);
+}
+.cuts-button:hover {
+  background: linear-gradient(to right, #0fc8d5, #0daee5);
+}
+.no-shadow {
+  box-shadow: none; 
+}
+.flame-icon {
+  position: absolute;
+  width: 80px; /* Adjust the size of the image as needed */
+  height: auto;
+  margin-left: -120px;
+  margin-top: -40px;
+}
+.cut-icon {
+  position: absolute;
+  width: 120px; /* Adjust the size of the image as needed */
+  height: auto;
+  margin-left: -140px;
+  margin-top: -30px;
+}
+/* BURNS OVERLAY */
+.Boverlay {  
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.9); 
+  overflow-x: hidden; 
+  transition: 0.5s;
+}
+.Boverlay-content {
+  position: relative;
+  top: 25%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px; 
+}
+.Boverlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; 
+}
+.Boverlay a:hover, .Boverlay a:focus {
+  color: #f1f1f1;
+}
+.Boverlay .Bclosebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .Boverlay a {font-size: 20px}
+  .Boverlay .Bclosebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/* CUTS OVERLAY */
+.Coverlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden; 
+  transition: 0.5s; 
+}
+.Coverlay-content {
+  position: relative;
+  top: 25%; 
+  width: 100%;
+  text-align: center; 
+  margin-top: 30px; 
+}
+.Coverlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; 
+  transition: 0.3s; 
+}
+.Coverlay a:hover, .Coverlay a:focus {
+  color: #f1f1f1;
+}
+.Coverlay .Cclosebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .Coverlay a {font-size: 20px}
+  .Coverlay .Cclosebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.BNavTitleA{
+  margin-top: -100px;
+}
+
+.accordion {
+  background-color: #d7e6fb;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #84b7ff;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: rgb(196, 196, 196);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 86.8%;
+  margin-left: 57px;
+  font-size: 18px;
+}
